@@ -47,7 +47,17 @@
                 <div class="col-md-12">
                     <p class="fh5co-social-icons">
                         <a href="#"><i class="icon-twitter2"></i></a>
-                        <a href="#"><i class="icon-facebook2"></i></a>
+                        <?php
+
+                        if(get_theme_mod('ju_facebook_handle')){
+                            ?>
+                                <a href="https://www.facebook.com/<?php echo get_theme_mod('ju_facebook_handle'); ?>"><i class="icon-facebook2"></i>
+
+                                </a>
+                            <?
+                        }
+                         ?>
+
                         <a href="#"><i class="icon-instagram"></i></a>
                         <a href="#"><i class="icon-dribbble2"></i></a>
                         <a href="#"><i class="icon-youtube"></i></a>
