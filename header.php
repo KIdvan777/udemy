@@ -64,6 +64,16 @@
 					<?php if (function_exists('quads_ad'))
 			              echo quads_ad( array('location' => 'udemy_header') );
 			         ?>
+					 <?php if(get_theme_mod('ju_header_show_search_setting') == 'yes'){
+						 ?>
+							 <div class="raw" >
+								 <div class="col-md-4" id="top-search"">
+									  <?php  get_search_form() ?>
+								 </div>
+							  </div>
+						 <?
+					 } ?>
+
 
 					<!-- START #fh5co-menu-wrap -->
 					<nav id="fh5co-menu-wrap" role="navigation">
